@@ -68,7 +68,7 @@ def hash_(mensaje):
 		for j in range(16):
 			X[j+16]=mensaje[16*i+j]
 			X[j+32]=hex(int(''.join(xorer(bin(int(X[j+16],16))[2:].zfill(8),bin(int(X[j],16))[2:].zfill(8))),2))[2:].zfill(2)
-		t=0
+		a=0
 		for j in range(18):
 			for k in range(48):
 				a=int(''.join(xorer(bin(int(X[k],16))[2:].zfill(8),bin(S[a])[2:].zfill(8))),2)
