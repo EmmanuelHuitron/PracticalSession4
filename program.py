@@ -76,7 +76,7 @@ def hash_(mensaje):
 			a=(a+j)%256
 	return ''.join(X[:16])
 
-prin(hash_(checksum(padding(_hx(input().strip(' "\t\n'))))))
+print(hash_(checksum(padding(_hx(input().strip(' "\t\n'))))))
 
 	
 
